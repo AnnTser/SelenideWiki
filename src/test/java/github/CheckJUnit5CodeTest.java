@@ -26,7 +26,7 @@ public class CheckJUnit5CodeTest {
         $("#wiki-wrapper").shouldHave(text("Welcome to the selenide wiki!"));
         $("#wiki-pages-filter").setValue("SoftAssertions");
         $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
-        $(byText("SoftAssertions")).click(); //нажать на результат поиска, тк по Enter не срабатывает переход
+        $(byText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})\n" +
                 "class Tests {\n" +
                 "  @Test\n" +
