@@ -15,11 +15,10 @@ public class CheckJUnit5CodeTest {
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
-        Configuration.holdBrowserOpen = true;
     }
 
     @Test
-    void SuccesfulCheckJUnit5CodeTest() {
+    void succesfulCheckJUnit5CodeTest() {
 
         open("/selenide/selenide");
         $("#wiki-tab").click();
